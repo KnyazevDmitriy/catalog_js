@@ -10,7 +10,7 @@ fetch('https://dummyjson.com/products')
       card.classList.add('card', `col-${index % 4 + 1}`)
 
       const img = document.createElement('img')
-      img.setAttribute('src', element.images[0])
+      img.setAttribute('src', element.thumbnail)
       img.classList.add('card-img-top')
 
       const cardBody = document.createElement('div')
