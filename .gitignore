@@ -1,0 +1,11 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+node_modules
+dist
+coverage
+.idea
+.vscode
+.history
+.npm
