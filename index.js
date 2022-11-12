@@ -11,6 +11,7 @@ fetch('https://dummyjson.com/products')
 
       const img = document.createElement('img')
       img.setAttribute('src', element.thumbnail)
+      img.setAttribute('alt', element.brand)
       img.classList.add('card-img-top')
 
       const cardBody = document.createElement('div')
@@ -29,13 +30,21 @@ fetch('https://dummyjson.com/products')
 
       const cardPrice = document.createElement('small')
       cardPrice.classList.add('price', 'text-muted')
-      cardPrice.textContent = `Price: ${element.price}$`
+      cardPrice.textContent = `Price: `
+
+      const cardBoldPrice = document.createElement('b')
+      cardBoldPrice.textContent = `${element.price}$`
 
       const cardRating = document.createElement('small')
       cardRating.classList.add('rating', 'text-muted')
-      cardRating.textContent = `Rating: ${element.rating}`
+      cardRating.textContent = `Rating: `
 
+      const cardBoldRating = document.createElement('b')
+      cardBoldRating.textContent = `${element.rating}`
+
+      cardPrice.appendChild(cardBoldPrice)
       cardFooter.appendChild(cardPrice)
+      cardRating.appendChild(cardBoldRating)
       cardFooter.appendChild(cardRating)
       cardBody.appendChild(cardTitle)
       cardBody.appendChild(cardText)
