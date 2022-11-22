@@ -1,0 +1,195 @@
+.cart {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    left: -100px;
+    transition: all .9s;
+    -webkit-transition: all .9s;
+    -moz-transition: all .9s;
+    -ms-transition: all .9s;
+    -o-transition: all .9s;
+
+}
+
+.cart .line .h3,
+.cart .line .close {
+    display: none;
+}
+
+.cart.active {
+    display: block;
+    left: 0px;
+    position: absolute;
+    top: 40px;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    z-index: 100;
+    width: 45%;
+    overflow-y: scroll;
+}
+
+.cart.active .line .h3 {
+    display: block;
+}
+
+.cart.active .line .close {
+    display: block;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.close {
+    cursor: pointer;
+    padding: 0px 5px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.close:hover {
+    background-color: rgb(205, 205, 205);
+}
+
+.bg-gray {
+    display: none;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.bg-gray.active {
+    display: block;
+    margin-top: 40px;
+    width: 100%;
+    height: 400%;
+    z-index: 10;
+    background: rgba(79, 79, 79, .5);
+    position: absolute;
+    top: 0;
+    overflow-y: scroll;
+}
+
+.product {
+    text-align: left;
+    padding: 15px;
+    display: flex;
+    position: relative;
+    width: 90%;
+    margin: 0 20px auto;
+    height: 70px;
+    border-top: 1px solid gray;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.product-img {
+    width: 60px;
+    height: 60px;
+    left: 10px;
+    top: 5px;
+}
+
+.product-title {
+    font-size: 17px;
+    
+}
+
+.product-block {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    /* position: absolute; */
+    /* right: 0; */
+}
+
+.product-minus,
+.product-plus {
+    width: 30px;
+    height: 30px;
+
+    background: gray;
+    color: white;
+
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.product-minus:hover,
+.product-plus:hover {
+    background: rgb(186, 186, 186);
+    color: rgb(73, 73, 73);
+}
+
+.product-minus:disabled {
+    background: rgb(172, 172, 172);
+    color: white;
+    cursor: auto;
+}
+
+.product-count {
+    display: flex;
+    height: 30px;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgb(36, 95, 205);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+.remove-product {
+    text-decoration: none;
+    color: white;
+    background: rgb(197, 0, 0);
+    padding: 5px 7px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    border: none;
+}
+
+.remove-product:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 0, 0);
+}

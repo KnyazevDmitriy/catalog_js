@@ -1,0 +1,82 @@
+.header {
+    background: rgb(238, 238, 238);
+    align-items: center;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .cart-button {
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border: none;
+    background-color: rgb(22, 137, 22);
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+  }
+  
+  .cart-button:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 179, 224);
+  }
+  
+  .search-input {
+    padding-left: 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border: 1px solid black;
+  
+    border-color: rgb(194, 194, 194);
+  }
+  
+  .search-input::placeholder {
+    color: gray;
+  }
+  
+  .search {
+    background: none;
+    border: 1px solid rgb(22, 137, 22);
+    color: rgb(22, 137, 22);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+  }
+  
+  .search:hover {
+    background: white;
+    color: black;
+    border-color: black;
+  }
